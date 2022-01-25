@@ -1,0 +1,34 @@
+
+<!--Bianca Bastos
+Inspirado no projeto de Jorge Santana (jorgesantana.net.br), disponibilizado na Udemy-->
+
+<!doctype html> 
+
+<html>
+    <head>
+
+        <title></title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="jogo.js"></script>    
+
+    </head>
+    <body onresize="ajustaTamanhoDoPalco()">
+        
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png">
+                <img id="v2" src="imagens/coracao_cheio.png">
+                <img id="v3" src="imagens/coracao_cheio.png">
+            </div>
+            <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+        </div>
+
+        <script>
+            document.getElementById('cronometro').innerHTML = tempo
+            var criaAgviva = setInterval(function(){
+                posicaoRandom()
+            }, 2000)
+        </script>
+
+    </body>
+</html>
