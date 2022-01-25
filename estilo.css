@@ -1,0 +1,50 @@
+body {
+    background-image: url(imagens/fenda2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+html {
+    cursor: url(imagens/rede3.png) 30 30, auto;
+}
+.aguaviva0 {
+    width: 50px;
+}
+.aguaviva1 {
+    width: 70px;
+}
+.aguaviva2 {
+    width: 90px;
+}
+.ladoA {
+    transform: scaleX(1);
+}
+.ladoB {
+    transform: scaleX(-1);
+}
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.vidas {
+    float: left;
+}
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+.centro {
+    padding-top: 150px;
+    padding-left: 250px;
+    padding-bottom: 80px;
+}
+.vitoria {
+    padding-top: 100px;
+    padding-left: 390px;
+}
