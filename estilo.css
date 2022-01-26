@@ -1,10 +1,10 @@
 body {
-    background-image: url(../fenda2.jpg);
+    background-image: url(fenda2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 html {
-    cursor: url(../rede3.png) 30 30, auto;
+    cursor: url(rede3.png) 30 30, auto;
 }
 .aguaviva0 {
     width: 50px;
