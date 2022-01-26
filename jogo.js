@@ -20,7 +20,7 @@ var cronometro = setInterval(function() {
     if (tempo < 0) { //venceu a partida
         clearInterval(cronometro)
         clearInterval(criaAgviva)
-        window.location.href = 'vitoria.html'
+        window.location.href = 'https://biancabsouza23.github.io/appCacaAguaVivas/vitoria.html'
     } else {
         document.getElementById('cronometro').innerHTML = tempo
     }
@@ -30,10 +30,10 @@ function posicaoRandom(){
     //remover aguaviva anterior, caso exista
     if (document.getElementById('agviva')) {
         if (vidas > 3) {
-            window.location.href = 'fim_de_jogo.html'
+            window.location.href = 'https://biancabsouza23.github.io/appCacaAguaVivas/fim_de_jogo.html'
         } else {
             document.getElementById('agviva').remove()
-            document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"
+            document.getElementById('v' + vidas).src = "coracao_vazio.png"
             vidas++
         }
     }
@@ -49,7 +49,7 @@ function posicaoRandom(){
     posicaoY = posicaoY < 0 ? 0 : posicaoY
 
     console.log(posicaoX, posicaoY)
-    agviva.src = 'imagens/ag.png' //atribui elemento
+    agviva.src = 'ag.png' //atribui elemento
     agviva.className = tamanhoRandom() + ' ' + ladoRandom()
     agviva.style.left = posicaoX + 'px'
     agviva.style.top = posicaoY + 'px'
