@@ -5,7 +5,6 @@ Inspirado no projeto de Jorge Santana (jorgesantana.net.br), disponibilizado na 
 var altura = 0, largura = 0, tam, posicaoX, posicaoY, agviva, lado, vidas = 1
 var tempo = 10
 
-
 //recupera informacoes de dimensao da pg
 function ajustaTamanhoDoPalco(){
     altura = window.innerHeight
@@ -34,7 +33,7 @@ function posicaoRandom(){
             window.location.href = 'fim_de_jogo.html'
         } else {
             document.getElementById('agviva').remove()
-            document.getElementById('v' + vidas).src = "https://drive.google.com/file/d/1ZWeGtOA4qXqtoPY17TfdjXwW5TS50bH9/view?usp=sharing"
+            document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"
             vidas++
         }
     }
@@ -78,4 +77,3 @@ function ladoRandom() {
         case 1: return 'ladoB'
     }
 }
-
