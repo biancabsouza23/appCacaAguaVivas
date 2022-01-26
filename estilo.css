@@ -1,7 +1,7 @@
 body {
     background-image: url(../fenda2.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 html {
     cursor: url(../rede3.png) 30 30, auto;
